@@ -16,7 +16,7 @@ app.use(express.json());
 
 // Configuración de la sesión
 app.use(session({
-  secret: process.env.SESSION_SECRET || '844c8af73dc54d5119e440baf921324b0cfa15290c0eff75091585b77529826acaeeb80e19a6f3a24197657075111ca1735e8d335e5b20c44d990b4ff6609884', 
+  secret: process.env.SESSION_SECRET, 
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false } 
